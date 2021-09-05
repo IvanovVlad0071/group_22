@@ -37,3 +37,19 @@ curl 'http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000'
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100   185  100   185    0     0   1824      0 --:--:-- --:--:-- --:--:--  1831{"age":"32","family":{"children":[["Alex",24],["Kate",12]],"pets":{"cat":{"age":3,"name":"Sunny"},"dog":{"age":4,"name":"Luky"}},"u_salary_1_5_year":4000},"name":"Vadim","salary":1000}
+2) Написать скрипт:
+#!/bin/bash
+echo " Зайти в папку"
+cd myscript
+echo "создать три папки"
+mkdir folder_1 folder_2 folder_3
+echo "зайти в любую папку"
+cd folder_2
+echo "создать пять файлов"
+touch kz_1.txt kz_2.txt kz_3.txt kz_file_4.json kz_file_5.json
+echo "создать три папки"
+mkdir en_1 en_2 en_3
+echo "вывести список содержимого папки"
+ls -la
+echo "переместить любые два файла в любую другую папку"
+mv {kz_1.txt,kz_file_4.json} /d/myscript/folder_2/en_2
