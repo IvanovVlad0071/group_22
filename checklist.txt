@@ -1,0 +1,9 @@
+1) No.
+2) priority
+3) TC name
+4) Preconditions
+5) Test steps
+6) Expected Results
+7) Status
+8) Tester/Date
+9) Comments.
